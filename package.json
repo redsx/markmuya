@@ -1,7 +1,7 @@
 {
-  "name": "muya",
+  "name": "markmuya",
   "version": "0.0.1",
-  "description": "Future markdown editor for web and desktop application development",
+  "description": "Future markdown editor for web application development",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./example/webpack.config.js --open",
@@ -16,15 +16,13 @@
   "keywords": [
     "markdown",
     "editor",
-    "web",
-    "destop"
+    "web"
   ],
-  "author": "ransixi@gmail.com",
+  "author": "redsx",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marktext/muya/issues"
+    "url": "https://github.com/redsx/markmuya/issues"
   },
-  "homepage": "https://github.com/marktext/muya#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "dompurify": "^2.0.11",
