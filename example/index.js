@@ -1,20 +1,22 @@
-import Muya from '../lib'
-import EmojiPicker from '../lib/ui/emojiPicker'
-import TablePicker from '../lib/ui/tablePicker'
-import QuickInsert from '../lib/ui/quickInsert'
-import CodePicker from '../lib/ui/codePicker'
-import ImagePathPicker from '../lib/ui/imagePicker'
-import ImageSelector from '../lib/ui/imageSelector'
-import ImageToolbar from '../lib/ui/imageToolbar'
-import Transformer from '../lib/ui/transformer'
-import FormatPicker from '../lib/ui/formatPicker'
-import LinkTools from '../lib/ui/linkTools'
-import FootnoteTool from '../lib/ui/footnoteTool'
-import TableBarTools from '../lib/ui/tableTools'
-import FrontMenu from '../lib/ui/frontMenu'
+import Muya from '../dist/Muya';
+import EmojiPicker from '../dist/EmojiPicker'
+import TablePicker from '../dist/TablePicker'
+import QuickInsert from '../dist/QuickInsert'
+import CodePicker from '../dist/CodePicker'
+import ImagePathPicker from '../dist/ImagePathPicker'
+import ImageSelector from '../dist/ImageSelector'
+import ImageToolbar from '../dist/ImageToolbar'
+import Transformer from '../dist/Transformer'
+import FormatPicker from '../dist/FormatPicker'
+import LinkTools from '../dist/LinkTools'
+import FootnoteTool from '../dist/FootnoteTool'
+import TableBarTools from '../dist/TableBarTools'
+import FrontMenu from '../dist/FrontMenu'
 
 import '../lib/assets/styles/theme.css'
 import '../themes/default.css'
+
+console.log('muya: ', FrontMenu);
 
 // table
 Muya.use(TablePicker)
