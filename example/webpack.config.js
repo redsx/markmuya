@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const commonConfig = require('../scripts/webpack.common')
+const commonConfig = require('./webpack.common')
 
 module.exports = {
   ...commonConfig.default,
@@ -8,7 +8,7 @@ module.exports = {
   entry: './example/index.js',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    contentBase: './build',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -17,6 +17,10 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
+  },
+  devServer: {
+    compress: true,
+    port: 9000,
   },
 }
